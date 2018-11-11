@@ -27,8 +27,6 @@ namespace Sortquick1
         }
         public static void quicksort(ref int[] array)
         {
-            // not needed for quicksort
-            // int[] temp = new int[array.Length];
             quicksort(ref array, 0, array.Length-1);
         }
 
@@ -68,13 +66,7 @@ namespace Sortquick1
             }
             Console.Write("\n");
         }
-        //
-        // 0) origin and target indices = 0
-        // 1) pick pivot (unless there are only 2 elements, in which case just swap if needed)
-        // 2) swap elements according to pivot
-        // 3) partitionHalves
-        // 4) call myself for both halves
-        //
+
         public static void quicksort(ref int[] array, int originIdx, int limitIdx)
         {
             if (limitIdx - originIdx < 1)
